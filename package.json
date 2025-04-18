@@ -1,10 +1,10 @@
 {
-  "name": "hugolify-template",
-  "version": "1.15.0",
+  "name": "hugolify-multisite-demo",
+  "version": "1.0.0",
   "homepage": "https://www.hugolify.io",
-  "repository": "https://github.com/hugolify/hugolify-template",
+  "repository": "https://github.com/sebousan/hugolify-multisite-demo",
   "bugs": {
-    "url": "https://github.com/hugolify/hugolify-template/issues"
+    "url": "https://github.com/sebousan/hugolify-multisite-demo/issues"
   },
   "author": {
     "email": "sebousan@gmail.com",
@@ -17,14 +17,17 @@
     "@hugolify/prettier-config": "^0.3.1",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
-    "netlify-plugin-hugo-cache-resources": "^0.2.1",
+    "netlify-plugin-cache": "^1.0.3",
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "postcss-sass": "^0.5.0"
   },
   "scripts": {
-    "watch": "hugo server",
+    "watch-site_a": "hugo server --config config/_default/site_a.yaml",
+    "watch-site_b": "hugo server --config config/_default/site_b.yaml",
     "build": "hugo --noChmod --gc --minify",
+    "build-site_a": "hugo --config config/_default/site_a.yaml,config/production/site_a.yaml --noChmod --gc --minify",
+    "build-site_b": "hugo --config config/_default/site_b.yaml,config/production/site_b.yaml --noChmod --gc --minify",
     "tidy": "hugo mod tidy",
     "update": "hugo mod get -u",
     "updateall": "yarn update && yarn tidy && yarn upgrade",

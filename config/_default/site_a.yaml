@@ -1,0 +1,70 @@
+## SITE A
+title: Site A
+publishDir: public/site_a
+
+module:
+  imports:
+    # Content
+    # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
+    - path: github.com/hugolify/hugolify-theme-posts
+
+    # Core theme
+    - path: github.com/hugolify/hugolify-theme
+
+    # Admin
+    - path: github.com/hugolify/hugolify-admin
+
+  # Get specifi contents
+  mounts:
+    # Index posts file
+    - source: 'content/site_a/posts.md'
+      target: 'content/posts/_index.md'
+
+    # Posts
+    - source: 'content/posts'
+      target: 'content/posts'
+
+    # Sitemap
+    - source: 'content/sitemap'
+      target: 'content/sitemap'
+
+    # Content
+    - source: 'content/site_a'
+      target: 'content'
+
+    # Menu
+    - source: 'data/menu/site_a'
+      target: 'data/menu'
+
+    # Static
+    - source: 'static/site_a'
+      target: 'static'
+
+    # Assets
+    - source: 'assets'
+      target: 'assets'
+
+# Set site param
+params:
+  _merge: deep
+  site: site_a
+  logo:
+    header: '/assets/images/logos/site_a.svg'
+    footer: '/assets/images/logos/site_a.svg'
+
+  # Admin
+  admin:
+    collections:
+      # Disable collections originals
+      config:
+        enable: false
+      indexes:
+        enable: false
+      pages:
+        enable: false
+
+      # Enable all sites
+      site_a:
+        enable: true
+      site_b:
+        enable: true

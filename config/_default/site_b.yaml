@@ -1,0 +1,50 @@
+## SITE A
+title: Site B
+publishDir: public/site_b
+
+module:
+  imports:
+    # Content
+    # -> Hugolify content types and taxonomies available https://www.hugolify.io/docs/sections/
+    - path: github.com/hugolify/hugolify-theme-posts
+
+    # Core theme
+    - path: github.com/hugolify/hugolify-theme
+
+  # Get specifi contents
+  mounts:
+    # Index posts file
+    - source: 'content/site_b/posts.md'
+      target: 'content/posts/_index.md'
+
+    # Posts
+    - source: 'content/posts'
+      target: 'content/posts'
+
+    # Sitemap
+    - source: 'content/sitemap'
+      target: 'content/sitemap'
+
+    # Content
+    - source: 'content/site_b'
+      target: 'content'
+
+    # Menu
+    - source: 'data/menu/site_b'
+      target: 'data/menu'
+
+    # Static
+    - source: 'static/site_b'
+      target: 'static'
+
+    # Assets
+    - source: 'assets'
+      target: 'assets'
+
+# Set site param
+params:
+  _merge: deep
+  site: site_b
+  logo:
+    header: '/assets/images/logos/site_b.svg'
+    footer: '/assets/images/logos/site_b.svg'

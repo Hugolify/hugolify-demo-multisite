@@ -1,5 +1,7 @@
+# ======== CONFIG ========
+
 [build]
-  command = "yarn build"
+  command = "node build-script.js"
   publish = "public"
 
 [build.environment]
@@ -10,17 +12,13 @@
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
-[context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
 [context.branch-deploy.environment]
   HUGO_ENV = "staging"
 
 [[plugins]]
-  package = "netlify-plugin-hugo-cache-resources"
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+  paths = ["resources", "public"]
 
 [[headers]]
   for = "/*"
@@ -28,3 +26,23 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "0"
     X-Content-Type-Options = "nosniff"
+
+
+# REDIRECTS
+
+[[redirects]]
+  from = "https://site_a.netlify.app/*"
+  to = "/site_a/:splat"
+  status = 200
+
+# PRODUCTION
+
+[[redirects]]
+  from = "https://www.site_a.com/*"
+  to = "/site_a/:splat"
+  status = 200
+
+[[redirects]]
+  from = "https://www.site_b.com/*"
+  to = "/site_b/:splat"
+  status = 200

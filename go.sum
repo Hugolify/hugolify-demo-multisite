@@ -8,10 +8,13 @@ github.com/hugolify/hugolify-admin v0.0.0-20250416201036-53c36a1e8bfd h1:PXOAo0X
 github.com/hugolify/hugolify-admin v0.0.0-20250416201036-53c36a1e8bfd/go.mod h1:qB7ndiuXR6XZu3r9UX3LtTHnrMF98U7vJHg6XXb6NvA=
 github.com/hugolify/hugolify-theme v1.22.3 h1:bfdsX9iv/W1hfqGLx3ltiaAL84nk5DQt9NQQvTiHtus=
 github.com/hugolify/hugolify-theme v1.22.3/go.mod h1:dRIiGMTOC5dQ8U9CEcLyNIW7be6n7jNx0iSUB1YKdJw=
+github.com/hugolify/hugolify-theme-posts v1.2.6 h1:OPGD9WMRs/MN4BuuqauAxLcLc9zZZNSZ6X71LXMfvcY=
+github.com/hugolify/hugolify-theme-posts v1.2.6/go.mod h1:YId8/w9DiCOEUA176HdhJVJyZgMyfwW91bwqutsFgUE=
 github.com/midzer/tobii v2.7.3+incompatible h1:sGqThnLuckyPFKciIhQ66bG0joNTPXKKiovXlDo4pV8=
 github.com/midzer/tobii v2.7.3+incompatible/go.mod h1:ByXFkVm8ja2+TXT7L+lfkdEIeHW4IdWdsQO8zJ5mEqA=
 github.com/orestbida/cookieconsent v3.1.0+incompatible h1:L2uj16SEL1bICkn6pJde9uc1qAPmTcEiFZO93zZKdQI=
 github.com/orestbida/cookieconsent v3.1.0+incompatible/go.mod h1:8N46VI/40AwvzASJDpiwfbu6zylSzKSDZRUVNmVXLxw=
+github.com/twbs/bootstrap v5.3.3+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/bootstrap v5.3.5+incompatible h1:6XrrFNMsiTTFcVTBf2886FO2XUNtwSE+QPv1os0uAA4=
 github.com/twbs/bootstrap v5.3.5+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
 github.com/twbs/icons v1.11.3 h1:XhvrQ1XDom9ggBbQx3wQCFGEr8qAQwQP/dAcw8OXMtA=

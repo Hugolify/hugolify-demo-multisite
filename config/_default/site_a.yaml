@@ -40,22 +40,23 @@ module:
     - source: 'static/site_a'
       target: 'static'
 
-    # Assets
-    - source: 'assets'
-      target: 'assets'
+    # SASS Variables
+    - source: 'assets/sass/abstracts/_variables-site-a.sass'
+      target: 'assets/sass/abstracts/_variables-site.sass'
 
 # Set site param
 params:
   _merge: deep
   site: site_a
   logo:
-    header: '/assets/images/logos/site_a.svg'
-    footer: '/assets/images/logos/site_a.svg'
+    header: '/assets/images/logo_site-a.svg'
+    footer: '/assets/images/logo_site-a.svg'
+  share: '/assets/images/share_site-a.png'
 
   # Admin
   admin:
     collections:
-      # Disable collections originals
+      # Disable originals collections
       config:
         enable: false
       indexes:

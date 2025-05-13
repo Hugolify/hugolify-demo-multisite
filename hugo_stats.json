@@ -4,7 +4,6 @@
       "a",
       "article",
       "body",
-      "br",
       "button",
       "details",
       "div",
@@ -14,6 +13,7 @@
       "head",
       "header",
       "html",
+      "img",
       "li",
       "link",
       "main",
@@ -25,7 +25,6 @@
       "section",
       "span",
       "strong",
-      "summary",
       "time",
       "title",
       "ul"
@@ -96,23 +95,6 @@
       "toc",
       "top"
     ],
-    "ids": [
-      "TableOfContents",
-      "conception",
-      "editor",
-      "footer",
-      "frequently-asked-questions",
-      "hosting",
-      "lorem-ipsum-dolor-sit-amet",
-      "main",
-      "navigation",
-      "navigationLabel",
-      "pages",
-      "quisque-vestibulum",
-      "toc",
-      "tocLabel",
-      "vivamus-tincidunt-malesuada",
-      "welcome-to-demohugolifyio"
-    ]
+    "ids": null
   }
 }

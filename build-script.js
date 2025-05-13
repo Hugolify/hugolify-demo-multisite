@@ -5,10 +5,12 @@ const path = require('path');
 // Site A
 const siteAPath = 'content/site_a';
 const siteAMenuPath = 'data/menu/site_a';
+const siteAStaticPath = 'static/site_a';
 
 // Site B
 const siteBPath = 'content/site_b';
 const siteBMenuPath = 'data/menu/site_b';
+const siteBStaticPath = 'static/site_b';
 
 // Common directories
 const assetsPath = 'assets';
@@ -65,21 +67,23 @@ console.log('✅ Modified files:', changedFiles);
 // Build sites
 if (
   hasChangesInDirectory(changedFiles, i18nPath) ||
-  hasChangesInDirectory(changedFiles, layoutsPath) ||
   hasChangesInDirectory(changedFiles, assetsPath) ||
+  hasChangesInDirectory(changedFiles, layoutsPath) ||
   hasChangesInDirectory(changedFiles, postsPath)
 ) {
   // Build all sites
   runBuildCommand('yarn build');
 } else if (
   hasChangesInDirectory(changedFiles, siteAPath) ||
-  hasChangesInDirectory(changedFiles, siteAMenuPath)
+  hasChangesInDirectory(changedFiles, siteAMenuPath) ||
+  hasChangesInDirectory(changedFiles, siteAStaticPath)
 ) {
   // Build site A
   runBuildCommand('yarn build-site_a');
 } else if (
   hasChangesInDirectory(changedFiles, siteBPath) ||
-  hasChangesInDirectory(changedFiles, siteBMenuPath)
+  hasChangesInDirectory(changedFiles, siteBMenuPath) ||
+  hasChangesInDirectory(changedFiles, siteBStaticPath)
 ) {
   // Build site B
   runBuildCommand('yarn build-site_b');

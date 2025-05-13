@@ -1,10 +1,10 @@
 {
-  "name": "hugolify-multisite-demo",
+  "name": "hugolify-demo-multisite",
   "version": "1.0.0",
   "homepage": "https://www.hugolify.io",
-  "repository": "https://github.com/sebousan/hugolify-multisite-demo",
+  "repository": "https://github.com/hugolify/hugolify-demo-multisite",
   "bugs": {
-    "url": "https://github.com/sebousan/hugolify-multisite-demo/issues"
+    "url": "https://github.com/hugolify/hugolify-demo-multisite/issues"
   },
   "author": {
     "email": "sebousan@gmail.com",

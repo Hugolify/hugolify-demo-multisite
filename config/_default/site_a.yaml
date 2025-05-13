@@ -36,10 +36,6 @@ module:
     - source: 'data/menu/site_a'
       target: 'data/menu'
 
-    # Static
-    - source: 'static/site_a'
-      target: 'static'
-
     # SASS Variables
     - source: 'assets/sass/abstracts/_variables-site-a.sass'
       target: 'assets/sass/abstracts/_variables-site.sass'

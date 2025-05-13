@@ -1,0 +1,21 @@
+{{- $sites := slice "site_a" "site_b" -}}
+{{- range $i, $s := $sites -}}
+  {{- $files := slice
+      (dict "nav-primary" (dict "env" .)) 
+      (dict "nav-secondary" (dict "env" .)) 
+      (dict "nav-legal" (dict "env" .)) 
+      (dict "nav-social" (dict "env" .)) 
+      (dict "banner" (dict "env" .)) 
+      (dict "footer" (dict "env" .)) 
+    -}}
+  {{ if ne $i 0 }},{{ end }}
+  {
+    name: 'config_{{ . }}',
+    label: '{{ i18n "admin.collections.config.label" }} ({{ humanize .}})',
+    editor: { preview: {{ site.Params.admin.preview | default false }} },
+    i18n: { structure: 'single_file' },
+    files: [
+      {{ partial "admin/datas/_range-files.yml" $files }}
+    ]
+  }
+{{- end -}}

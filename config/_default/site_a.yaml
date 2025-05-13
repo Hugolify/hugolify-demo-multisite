@@ -51,10 +51,12 @@ params:
 
   # Admin
   admin:
+    # Disable nested pages
+    nested:
+      depth: 1
+
     collections:
       # Disable originals collections
-      config:
-        enable: false
       indexes:
         enable: false
       pages:

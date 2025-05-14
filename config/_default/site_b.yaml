@@ -29,9 +29,9 @@ module:
     - source: 'content/site_b'
       target: 'content'
 
-    # Menu
-    - source: 'data/menu/site_b'
-      target: 'data/menu'
+    # Data
+    - source: 'data/site_b'
+      target: 'data'
 
     # SASS Variables
     - source: 'assets/sass/abstracts/_variables-site-b.sass'

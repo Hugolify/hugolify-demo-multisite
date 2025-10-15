@@ -1,3 +1,5 @@
+![How to create a multisite with Hugo and Decap CMS using Hugolify](https://res.cloudinary.com/uncinq/image/upload/v1758206687/share-how-to-multisite_offqdn.png)
+
 # Hugolify demo multisite
 
 ## Sites
